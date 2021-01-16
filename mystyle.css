@@ -1,0 +1,110 @@
+<style>
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 250px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: silver;
+  
+}
+* {
+  box-sizing: border-box;
+}
+
+body {background-color: #8A0651;
+  margin: 0;
+}
+
+/* Style the header */
+
+.header {
+  color: #8A0651;
+  background-color: #FFFFFF;
+  
+  border: 2px solid #8A0651;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  text-align: center;
+  background-position: center;
+}
+.footer{border: 2px solid #8A0651;
+  background-color: #f1f1f1;
+  padding: 1px;
+  text-align: center;
+  background-color: $424242;
+  color: #8A0651;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+ color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
