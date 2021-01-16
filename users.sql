@@ -39,50 +39,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 /*table for adding books*/
 
 
-CREATE TABLE IF NOT EXISTS `addbooks` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(50) NOT NULL,
-  `author` varchar(255) NOT NULL,
-`ISBN` varchar(255) NOT NULL,
-  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `ISBN` (`ISBN`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
-
-/*Table for storing admin username and password*/
-
-
-CREATE TABLE IF NOT EXISTS `admin` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
-/*Insert addmin password to the table*/
-
-INSERT INTO admin (username, password)
-VALUES ("admin", "admin123"); 
-
-
-/* create lendbook table*/
-
-
-CREATE TABLE IF NOT EXISTS `lendbooks` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(50) NOT NULL,
-  `author` varchar(255) NOT NULL,
-`ISBN` varchar(255) NOT NULL,
-`username` varchar(255) NOT NULL,
-`Rdate` varchar(255) NOT NULL,
-  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `ISBN` (`ISBN`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
